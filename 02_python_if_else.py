@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    # Validate input for n (it has to be an integer and between [1,100])
+    # Validate input for n (it has to be an integer between [1,100])
     while True:
         try:
             n = int(input("Enter integer between 1 and 100: ").strip())
