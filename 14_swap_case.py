@@ -1,4 +1,29 @@
 #############################################
+# Define functions required for the program
+#############################################
+def swap_case(s: str) -> str:
+    """
+    This function takes a string as input and returns a new string where all uppercase letters
+    are converted to lowercase and all lowercase letters are converted to uppercase.
+
+    Parameters:
+    s (str): The input string.
+
+    Returns:
+    str: The string with swapped cases.
+    """
+    swapped_s = ""
+    for i in s:
+        if i.isupper():
+            swapped_s += i.lower()
+        elif i.islower():
+            swapped_s += i.upper()
+        else:
+            swapped_s += i
+    
+    return swapped_s
+
+#############################################
 # Run the main program
 #############################################
 if __name__ == "__main__":
@@ -6,9 +31,10 @@ if __name__ == "__main__":
         try:
             s = input("Enter a string: ")
             if len(s) > 0 and len(s) <= 1000:
-                print(s.swapcase())  
                 break
         except ValueError:
             pass
         print("Invalid input. Please enter a string with 1 to 1000 characters.")
-      
+
+    # Print string with swapped cases
+    print(swap_case(s))
