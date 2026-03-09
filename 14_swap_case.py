@@ -11,6 +11,10 @@ def swap_case(s: str) -> str:
 
     Returns:
     str: The string with swapped cases.
+
+    IMPORTANT NOTE:
+    This function is for practice only. There's already a method in Pyhton that helps with this:
+    s.swapcase()
     """
     swapped_s = ""
     for i in s:
@@ -38,3 +42,4 @@ if __name__ == "__main__":
 
     # Print string with swapped cases
     print(swap_case(s))
+
