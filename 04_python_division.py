@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    # Validate input for 'a' and 'b' (0 < a,b < 10**10)
+    # Validate input for 'a' and 'b'
     while True:
         try:
             a = int(input("Enter integer a: ").strip())
@@ -14,4 +14,5 @@ if __name__ == "__main__":
 
     # Perform division operations and print results
     print(f"a // b = {a // b}")
+
     print(f"a / b = {a / b}")
