@@ -31,10 +31,10 @@ if __name__ == "__main__":
     while True:
         try:
             max_width = int(input("Enter the maximum width: "))
-            if max_width > 0:
+            if max_width > 0 and max_width <= len(string):
                 break
             else:
-                print("Maximum width must be a positive integer.")
+                print("Maximum width must be a positive integer not exceeding the string length.")
         except ValueError:
             print("Please enter a valid integer for maximum width.")
 
