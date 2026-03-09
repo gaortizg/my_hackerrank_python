@@ -44,11 +44,12 @@ def get_valid_scores(prompt: str, n: int) -> list:
 
 if __name__ == "__main__":
     n = get_valid_int("Enter the number of scores n: ")
-    sorted_unique_scores = sorted(set(get_valid_scores(f"Enter {n} scores for list A (space-separated): ", n)), reverse=True)
+    sorted_unique_scores = sorted(set(get_valid_scores(f"Enter {n} scores for list (space-separated): ", n)), reverse=True)
 
     if len(sorted_unique_scores) < 2:
         print("Not enough unique scores to determine the second highest.")
     else:
         print(f"Runner-up score: {sorted_unique_scores[1]}")
     
+
     
